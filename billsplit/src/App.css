@@ -7,12 +7,6 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -28,11 +22,43 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+.labels {
+  display: inline;
+  padding: 20px;
+  font-size: x-large;
+}
+
+.input-box {
+  border: none;
+  background-color: #282c34;
+  border-bottom: 2px solid white;
+  font-size: x-large;
+  color: lightgreen;
+}
+
+.amount-box {
+  color: lightgreen;
+}
+
+.error-prompt {
+  background-color: rgb(243, 157, 157);
+  border-color: black;
+  border-style: solid;
+  border-radius: 20px;
+  padding: 10px;
+  color: black;
+  animation-name: slidein;
+  animation-duration: 1s;
+}
+
+@keyframes slidein {
   from {
-    transform: rotate(0deg);
+    margin-left: 50%;
+    width: 150%;
   }
+
   to {
-    transform: rotate(360deg);
+    margin-left: 0%;
+    width: 100%;
   }
 }

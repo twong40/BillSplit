@@ -30,7 +30,7 @@ function App() {
   }
   function updatePeople(e) {
     if (/^\d+$/.test(e.target.value) === false) {
-      updateError(true, "Digits Only in Number of People", 0);
+      updateError(true, "Invalid format in People", 0);
     } else {
       setNumPeople(e.target.value);
       updateError(false, "", 0);
@@ -71,49 +71,56 @@ function App() {
     }
     return;
   }
-
   return (
     <div className="App">
       <header className="App-header">
-        <p> Bill Splitter </p>
+        <h1> Bill Splitter </h1>
         <form>
-          <label>
-            Number of People:
+          <label className="labels">
+            Number of People :
             <input
               type="text"
               name="Number of People"
               defaultValue={numPeople}
               onChange={e => updatePeople(e)}
               onKeyDown={e => handleKey(e)}
+              className="input-box"
             />
           </label>
-          <label>
-            Total Bill:$
+          <label className="labels">
+            Total Bill : $
             <input
               type="text"
               name="Total Bill"
               defaultValue={bill}
               onChange={e => updateBill(e)}
               onKeyDown={e => handleKey(e)}
+              className="input-box"
             />
           </label>
-          <label>
-            Tip
+          <label className="labels">
+            Tip :
             <input
               type="text"
               name="% Tip"
               defaultValue={tip}
               onChange={e => updateTip(e)}
               onKeyDown={e => handleKey(e)}
+              className="input-box"
             />
             %
           </label>
         </form>
-        <p> Amount per person $ {result}</p>
         <p>
-          {err.map(error => (
-            <div>{error.errMessage}</div>
-          ))}
+          {" "}
+          Amount per person : $ <span className="amount-box">{result}</span>
+        </p>
+        <p>
+          {err
+            .filter(error => error.err === true)
+            .map(error => (
+              <div className="error-prompt">{error.errMessage}</div>
+            ))}
         </p>
       </header>
     </div>
