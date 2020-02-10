@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/BillSplit/static/css/main.fd70f2c8.chunk.css",
-    "main.js": "/BillSplit/static/js/main.d7d5e4ae.chunk.js",
-    "main.js.map": "/BillSplit/static/js/main.d7d5e4ae.chunk.js.map",
+    "main.css": "/BillSplit/static/css/main.1be5e7d5.chunk.css",
+    "main.js": "/BillSplit/static/js/main.f3f1ff33.chunk.js",
+    "main.js.map": "/BillSplit/static/js/main.f3f1ff33.chunk.js.map",
     "runtime-main.js": "/BillSplit/static/js/runtime-main.3028e5c8.js",
     "runtime-main.js.map": "/BillSplit/static/js/runtime-main.3028e5c8.js.map",
     "static/js/2.abeb9220.chunk.js": "/BillSplit/static/js/2.abeb9220.chunk.js",
     "static/js/2.abeb9220.chunk.js.map": "/BillSplit/static/js/2.abeb9220.chunk.js.map",
     "index.html": "/BillSplit/index.html",
-    "precache-manifest.93376ccb969b5b014140e21d7ad95cda.js": "/BillSplit/precache-manifest.93376ccb969b5b014140e21d7ad95cda.js",
+    "precache-manifest.6df975000dc004a51c9f988153ff9bab.js": "/BillSplit/precache-manifest.6df975000dc004a51c9f988153ff9bab.js",
     "service-worker.js": "/BillSplit/service-worker.js",
-    "static/css/main.fd70f2c8.chunk.css.map": "/BillSplit/static/css/main.fd70f2c8.chunk.css.map",
+    "static/css/main.1be5e7d5.chunk.css.map": "/BillSplit/static/css/main.1be5e7d5.chunk.css.map",
     "static/js/2.abeb9220.chunk.js.LICENSE.txt": "/BillSplit/static/js/2.abeb9220.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.3028e5c8.js",
     "static/js/2.abeb9220.chunk.js",
-    "static/css/main.fd70f2c8.chunk.css",
-    "static/js/main.d7d5e4ae.chunk.js"
+    "static/css/main.1be5e7d5.chunk.css",
+    "static/js/main.f3f1ff33.chunk.js"
   ]
 }
