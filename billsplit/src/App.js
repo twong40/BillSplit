@@ -23,11 +23,6 @@ function App() {
   useEffect(() => {
     updateResult();
   });
-  function handleKey(e) {
-    if (e.key === "Enter") {
-      updateResult();
-    }
-  }
   function updatePeople(e) {
     if (/^\d+$/.test(e.target.value) === false) {
       updateError(true, "Invalid format in People", 0);
@@ -83,7 +78,6 @@ function App() {
               name="Number of People"
               defaultValue={numPeople}
               onChange={e => updatePeople(e)}
-              onKeyDown={e => handleKey(e)}
               className="input-box"
             />
           </label>
@@ -94,7 +88,6 @@ function App() {
               name="Total Bill"
               defaultValue={bill}
               onChange={e => updateBill(e)}
-              onKeyDown={e => handleKey(e)}
               className="input-box"
             />
           </label>
@@ -105,7 +98,6 @@ function App() {
               name="% Tip"
               defaultValue={tip}
               onChange={e => updateTip(e)}
-              onKeyDown={e => handleKey(e)}
               className="input-box"
             />
             %

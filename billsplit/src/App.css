@@ -1,12 +1,6 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -34,6 +28,7 @@
   border-bottom: 2px solid white;
   font-size: x-large;
   color: lightgreen;
+  width: 7%;
 }
 
 .amount-box {
