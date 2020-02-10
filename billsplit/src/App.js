@@ -62,8 +62,6 @@ function App() {
     const newErr = [...err];
     newErr[index] = { err: error, errMessage: errorMessage };
     setErr(newErr);
-    console.log("Finished Error");
-    updateResult();
     return;
   }
   function updateResult() {
@@ -73,6 +71,7 @@ function App() {
     }
     return;
   }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -111,6 +110,11 @@ function App() {
           </label>
         </form>
         <p> Amount per person $ {result}</p>
+        <p>
+          {err.map(error => (
+            <div>{error.errMessage}</div>
+          ))}
+        </p>
       </header>
     </div>
   );
